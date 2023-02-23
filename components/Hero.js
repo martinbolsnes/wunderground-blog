@@ -16,9 +16,11 @@ function Hero() {
           />
         </div>
         <div className='flex flex-col lg:w-1/2 w-full gap-4 mt-4 lg:ml-6'>
-          <p className='font-sans font-light text-gray text-xs uppercase'>
-            ARCHITECTURE
-          </p>
+          <div className='bg-green bg-opacity-40 p-1 w-1/4 rounded-lg flex justify-center'>
+            <p className='font-sans font-light text-black text-xs uppercase'>
+              ARCHITECTURE
+            </p>
+          </div>
           <h1 className='font-sans font-medium text-black md:text-4xl text-2xl uppercase'>
             The Art of Architecture: How to Find Beauty in Buildings
           </h1>
