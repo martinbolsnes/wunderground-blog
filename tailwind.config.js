@@ -11,6 +11,7 @@ module.exports = {
         black: '#070606',
         white: '#FFFDFA',
         gray: '#6D6D64',
+        green: '#4F7942',
       },
       fontFamily: {
         serif: ['Lora', 'serif'],
