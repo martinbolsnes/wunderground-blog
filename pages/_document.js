@@ -11,7 +11,7 @@ export default function Document() {
           crossorigin
         ></link>
         <link
-          href='https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Gloock&display=swap'
+          href='https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Sanchez&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap'
           rel='stylesheet'
         ></link>
       </Head>

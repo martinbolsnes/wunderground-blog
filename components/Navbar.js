@@ -19,10 +19,10 @@ export default function Navigation() {
             <div className='max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 relative flex items-center justify-between h-16'>
               <div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-start'>
                 <div className='flex-1 flex items-center'>
-                  <h1 className='block lg:hidden h-8 w-auto font-serif text-2xl md:text-3xl text-black'>
+                  <h1 className='block lg:hidden h-8 w-auto font-sans text-xl md:text-2xl text-black'>
                     Wünderground
                   </h1>
-                  <h1 className='hidden lg:block h-8 w-auto font-serif text-2xl md:text-3xl text-black'>
+                  <h1 className='hidden lg:block h-8 w-auto font-sans text-xl md:text-2xl text-black'>
                     Wünderground
                   </h1>
                 </div>
@@ -34,7 +34,7 @@ export default function Navigation() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className={`px-3 py-2 text-lg md:text-xl font-body text-black hover:text-gray ${
+                        className={`px-3 py-2 text-sm md:text-base font-sans text-black hover:text-gray ${
                           router.pathname === `/${item.href}` ? 'text-gray' : ''
                         }`}
                       >
@@ -67,7 +67,7 @@ export default function Navigation() {
                   key={item.name}
                   as='a'
                   href={item.href}
-                  className={`px-3 py-2 block text-lg md:text-xl font-body hover:text-gray ${
+                  className={`px-3 py-2 block text-sm md:text-base font-sans hover:text-gray ${
                     router.pathname === `/${item.href}` ? 'text-gray' : ''
                   }`}
                 >

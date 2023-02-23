@@ -16,11 +16,13 @@ function Hero() {
           />
         </div>
         <div className='flex flex-col lg:w-1/2 w-full gap-4 mt-4 lg:ml-6'>
-          <p className='font-serif text-gray text-xs uppercase'>ARCHITECTURE</p>
-          <h1 className='font-serif text-black md:text-5xl text-3xl uppercase'>
+          <p className='font-sans font-light text-gray text-xs uppercase'>
+            ARCHITECTURE
+          </p>
+          <h1 className='font-sans font-medium text-black md:text-4xl text-2xl uppercase'>
             The Art of Architecture: How to Find Beauty in Buildings
           </h1>
-          <p className='font-body text-black text-base'>
+          <p className='font-serif text-opacity-75 text-black text-base'>
             Architecture is often thought of as a practical art form, concerned
             primarily with function and utility. However, just like other forms
             of art, architecture can also be beautiful, inspiring, and
@@ -28,7 +30,7 @@ function Hero() {
             of buildings is an important part of understanding and enjoying the
             world around us.
           </p>
-          <p className='font-serif text-black text-xs uppercase'>
+          <p className='font-sans text-black text-xs uppercase'>
             BY ETHAN JAMESON
           </p>
         </div>

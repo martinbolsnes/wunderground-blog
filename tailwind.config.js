@@ -13,8 +13,8 @@ module.exports = {
         gray: '#6D6D64',
       },
       fontFamily: {
-        serif: ['Gloock', 'serif'],
-        body: ['EB Garamond', 'serif'],
+        serif: ['Lora', 'serif'],
+        sans: ['Unbounded', 'cursive'],
       },
       zIndex: {
         100: '100',

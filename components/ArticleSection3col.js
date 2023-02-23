@@ -16,14 +16,16 @@ function ArticleContainer() {
             />
           </div>
           <div className='flex flex-col md:gap-4 gap-2 pt-4 pb-8'>
-            <p className='font-serif text-gray text-xs uppercase'>travel</p>
-            <h1 className='font-serif text-black text-2xl uppercase'>
+            <p className='font-sans font-light text-gray text-xs uppercase'>
+              travel
+            </p>
+            <h1 className='font-sans font-medium text-black text-2xl uppercase'>
               The Intersection of Art and Travel: Discovering the Worlds Best
               Museums
             </h1>
 
-            <p className='font-serif text-black text-xs uppercase'>
-              Lily Alexandra Brown{' '}
+            <p className='font-sans text-black text-xs uppercase'>
+              by Lily Alexandra Brown{' '}
             </p>
           </div>
         </div>
@@ -38,13 +40,15 @@ function ArticleContainer() {
             />
           </div>
           <div className='flex flex-col md:gap-4 gap-2 pt-4 pb-8'>
-            <p className='font-serif text-gray text-xs uppercase'>food</p>
-            <h1 className='font-serif text-black text-2xl uppercase'>
+            <p className='font-sans font-light text-gray text-xs uppercase'>
+              food
+            </p>
+            <h1 className='font-sans font-medium text-black text-2xl uppercase'>
               Traveling for Foodies: Discovering New Cuisines and Cultures
             </h1>
 
-            <p className='font-serif text-black text-xs uppercase'>
-              Jonas Andreas Becker{' '}
+            <p className='font-sans text-black text-xs uppercase'>
+              by Jonas Andreas Becker{' '}
             </p>
           </div>
         </div>
@@ -59,14 +63,14 @@ function ArticleContainer() {
             />
           </div>
           <div className='flex flex-col md:gap-4 gap-2 pt-4 pb-8'>
-            <p className='font-serif text-gray text-xs uppercase'>
+            <p className='font-sans font-light text-gray text-xs uppercase'>
               ARCHITECTURE
             </p>
-            <h1 className='font-serif text-black text-2xl uppercase'>
+            <h1 className='font-sans font-medium text-black text-2xl uppercase'>
               10 Must-See Architectural Wonders Around the World
             </h1>
 
-            <p className='font-serif text-black text-xs uppercase'>
+            <p className='font-sans text-black text-xs uppercase'>
               BY ETHAN JAMESON
             </p>
           </div>
