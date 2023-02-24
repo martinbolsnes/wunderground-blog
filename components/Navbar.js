@@ -5,24 +5,25 @@ import { useRouter } from 'next/router';
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Latest', href: '/latest' },
+  { name: 'Articles', href: '/articles' },
+  { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },
 ];
 
 export default function Navigation() {
   const router = useRouter();
   return (
-    <Disclosure as='nav' className='bg-white'>
+    <Disclosure as='nav' className='bg-neutral-50'>
       {({ open }) => (
         <>
-          <div className='border-b-2 border-gray border-opacity-25 fixed top-0 left-0 right-0 bg-white'>
+          <div className='border-b-2 border-neutral-300 fixed top-0 left-0 right-0 bg-neutral-50'>
             <div className='max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 relative flex items-center justify-between h-16'>
               <div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-start'>
                 <div className='flex-1 flex items-center'>
-                  <h1 className='block lg:hidden h-8 w-auto font-sans text-xl md:text-2xl text-black'>
+                  <h1 className='block lg:hidden h-8 w-auto font-sans text-xl md:text-2xl text-neutral-900'>
                     Wünderground
                   </h1>
-                  <h1 className='hidden lg:block h-8 w-auto font-sans text-xl md:text-2xl text-black'>
+                  <h1 className='hidden lg:block h-8 w-auto font-sans text-xl md:text-2xl text-neutral-900'>
                     Wünderground
                   </h1>
                 </div>
@@ -34,8 +35,10 @@ export default function Navigation() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className={`px-3 py-2 text-base md:text-lg font-sans text-black hover:text-gray ${
-                          router.pathname === `/${item.href}` ? 'text-gray' : ''
+                        className={`px-3 py-2 text-base font-sans text-neutral-900 hover:text-neutral-500 ${
+                          router.pathname === `/${item.href}`
+                            ? 'text-neutral-500'
+                            : ''
                         }`}
                       >
                         {item.name}
@@ -44,7 +47,7 @@ export default function Navigation() {
                   </div>
                 </div>
                 <div className='absolute inset-y-0 right-0 flex items-center sm:hidden'>
-                  <Disclosure.Button className='inline-flex items-center justify-center p-2 text-black hover:text-gray focus:outline-none focus:ring-inset focus:ring-transparent'>
+                  <Disclosure.Button className='inline-flex items-center justify-center p-2 text-neutral-900 hover:text-neutral-500 focus:outline-none focus:ring-inset focus:ring-transparent'>
                     <span className='sr-only'>Open main menu</span>
                     {open ? (
                       <HiXMark className='block h-8 w-8' aria-hidden='true' />
@@ -67,8 +70,10 @@ export default function Navigation() {
                   key={item.name}
                   as='a'
                   href={item.href}
-                  className={`px-3 py-2 block text-base md:text-lg font-sans hover:text-gray ${
-                    router.pathname === `/${item.href}` ? 'text-gray' : ''
+                  className={`px-3 py-2 block text-base md:text-lg font-sans hover:text-neutral-500 ${
+                    router.pathname === `/${item.href}`
+                      ? 'text-neutral-500'
+                      : ''
                   }`}
                 >
                   {item.name}

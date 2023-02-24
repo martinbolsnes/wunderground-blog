@@ -4,7 +4,7 @@ import Image from 'next/image';
 function ArticleSection4col() {
   return (
     <section className='max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 mt-20'>
-      <h3 className='font-sans text-gray text-lg -mt-10 mb-6'>Latest</h3>
+      <h3 className='font-sans text-neutral-700 text-lg -mt-10 mb-6'>Latest</h3>
       <div className='grid grid-rows-1 md:grid-cols-4 lg:gap-8 gap-4'>
         <div>
           <div>
@@ -17,14 +17,14 @@ function ArticleSection4col() {
             />
           </div>
           <div className='flex flex-col md:gap-4 gap-2 pt-4 pb-8'>
-            <p className='font-sans font-light text-gray text-xs uppercase'>
+            <p className='font-sans font-light text-neutral-800 text-xs uppercase'>
               Food
             </p>
-            <h1 className='font-sans font-medium text-black text-xl uppercase'>
+            <h1 className='font-sans font-medium text-neutral-900 text-xl uppercase'>
               From Street Food to Fine Dining: A Foodies Guide to Paris
             </h1>
 
-            <p className='font-sans text-black text-xs uppercase'>
+            <p className='font-sans text-neutral-900 text-xs uppercase'>
               by Leon Matthias Hofmann
             </p>
           </div>
@@ -40,15 +40,15 @@ function ArticleSection4col() {
             />
           </div>
           <div className='flex flex-col md:gap-4 gap-2 pt-4 pb-8'>
-            <p className='font-sans font-light text-gray text-xs uppercase'>
+            <p className='font-sans font-light text-neutral-800 text-xs uppercase'>
               photography
             </p>
-            <h1 className='font-sans font-medium text-black text-xl uppercase'>
+            <h1 className='font-sans font-medium text-neutral-900 text-xl uppercase'>
               The Art of Travel Photography: Tips for Capturing the World Around
               You
             </h1>
 
-            <p className='font-sans text-black text-xs uppercase'>
+            <p className='font-sans text-neutral-900 text-xs uppercase'>
               by Frieda Johanna Müller
             </p>
           </div>
@@ -64,14 +64,14 @@ function ArticleSection4col() {
             />
           </div>
           <div className='flex flex-col md:gap-4 gap-2 pt-4 pb-8'>
-            <p className='font-sans font-light text-gray text-xs uppercase'>
+            <p className='font-sans font-light text-neutral-800 text-xs uppercase'>
               travel
             </p>
-            <h1 className='font-sans font-medium text-black text-xl uppercase'>
+            <h1 className='font-sans font-medium text-neutral-900 text-xl uppercase'>
               Exploring the Worlds Most Beautiful Gardens and Parks
             </h1>
 
-            <p className='font-sans text-black text-xs uppercase'>
+            <p className='font-sans text-neutral-900 text-xs uppercase'>
               BY Amelia Grace Lee
             </p>
           </div>
@@ -87,15 +87,15 @@ function ArticleSection4col() {
             />
           </div>
           <div className='flex flex-col md:gap-4 gap-2 pt-4 pb-8'>
-            <p className='font-sans font-light text-gray text-xs uppercase'>
+            <p className='font-sans font-light text-neutral-800 text-xs uppercase'>
               Architecture
             </p>
-            <h1 className='font-sans font-medium text-black text-xl uppercase'>
+            <h1 className='font-sans font-medium text-neutral-900 text-xl uppercase'>
               Traveling Through Time: Exploring the Architecture of Ancient
               Civilizations
             </h1>
 
-            <p className='font-sans text-black text-xs uppercase'>
+            <p className='font-sans text-neutral-900 text-xs uppercase'>
               BY Matthew William Davis
             </p>
           </div>
