@@ -16,17 +16,9 @@ function Articles() {
           <p className='font-sans font-light text-neutral-800 text-sm uppercase'>
             ARCHITECTURE
           </p>
-          <h1 className='font-sans font-medium text-neutral-900 md:text-5xl text-3xl uppercase'>
+          <h1 className='font-sans font-medium text-neutral-900 md:text-6xl text-4xl uppercase'>
             The Art of Architecture: How to Find Beauty in Buildings
           </h1>
-          <p className='font-serif text-neutral-700 text-lg'>
-            Architecture is often thought of as a practical art form, concerned
-            primarily with function and utility. However, just like other forms
-            of art, architecture can also be beautiful, inspiring, and
-            thought-provoking. The ability to appreciate the aesthetic qualities
-            of buildings is an important part of understanding and enjoying the
-            world around us.
-          </p>
           <div className='flex items-center'>
             <Image
               className='w-10 h-10 rounded-full avatar ring-1 ring-emerald-800'
@@ -52,57 +44,39 @@ function Articles() {
         </div>
         <div className='mt-10 w-full md:w-2/3 flex flex-col mx-auto'>
           <p className='font-serif text-neutral-700 text-base'>
-            Lorem ipsum dolor sit amet consectetur. Turpis at posuere egestas
-            convallis fermentum nascetur adipiscing nunc. In sodales vitae
-            malesuada turpis. Sollicitudin ac vestibulum consequat posuere nec
-            lacus. Nunc facilisis et sit praesent fusce quisque. At vulputate in
-            feugiat nisl eu lorem. Et at sem cras elit molestie. Nisl nisi leo
-            maecenas id.
+            Architecture is often thought of as a practical art form, concerned
+            primarily with function and utility. However, just like other forms
+            of art, architecture can also be beautiful, inspiring, and
+            thought-provoking. The ability to appreciate the aesthetic qualities
+            of buildings is an important part of understanding and enjoying the
+            world around us. In this post, we'll explore the art of architecture
+            and provide tips on how to find beauty in buildings.
             <br />
             <br />
-            Lectus integer mattis aliquet imperdiet nunc vestibulum donec diam
-            tortor. Nunc massa arcu morbi augue mattis sit cursus in dictum. Id
-            amet eget montes magna non lorem non donec sit. Rutrum risus nulla
-            egestas ipsum tincidunt adipiscing velit pulvinar. Quis sapien sed
-            lorem nunc. Pellentesque viverra proin volutpat duis imperdiet
-            consectetur sed egestas dui. Congue suspendisse ut luctus nunc.
-            Donec enim interdum malesuada venenatis sit blandit. Pharetra vel
-            nullam euismod vel aenean nisi tellus nunc.
+            <p className='font-medium'>Understanding Architectural Design</p>
+            <br />
+            To appreciate the beauty of architecture, its important to first
+            understand some of the key principles of architectural design. At
+            its core, architecture is concerned with creating structures that
+            are both functional and aesthetically pleasing. This involves
+            considering factors like form, scale, proportion, balance, and
+            materials. Form is perhaps the most fundamental aspect of
+            architectural design. A buildings form refers to its overall shape
+            and structure, which can range from simple and straightforward to
+            complex and elaborate. A well-designed form can create a sense of
+            harmony and balance that is pleasing to the eye.
             <br />
             <br />
-            Malesuada nullam amet diam at imperdiet sapien tortor. Viverra
-            egestas consequat sit fermentum eget. Ac tellus natoque sem felis
-            quis risus commodo urna aliquet. Accumsan vulputate consectetur leo
-            sit duis. Turpis malesuada molestie pretium eget amet. Integer dui
-            ultrices nullam ornare facilisi condimentum. Egestas imperdiet etiam
-            nunc tellus. Mollis vel diam ornare vel placerat sed diam aliquet
-            gravida. Id vulputate sed dui at amet. Neque ultricies placerat nibh
-            velit nulla in justo. Donec dictum ipsum aliquam sed sed consequat
-            bibendum. Id ut cras nisl et. Sed nunc amet metus magna est. Arcu
-            scelerisque dignissim libero eu pellentesque luctus nisi nunc. Mi
-            imperdiet et molestie viverra facilisis. Arcu pellentesque at amet
-            cursus bibendum. Elementum luctus ultricies in amet nec sed sed.
-            Arcu in eu turpis ut.
-            <br />
-            <br />
-            Ipsum amet lobortis massa ultrices ac risus arcu aliquet. Nunc
-            gravida non lobortis facilisis. Sodales varius orci aliquet enim
-            interdum nulla pharetra. Diam quam at ullamcorper scelerisque
-            praesent sagittis a eros amet. Hendrerit volutpat ac nulla nunc eget
-            morbi odio. Amet leo neque ut sit lectus pellentesque. Sapien eget
-            volutpat elementum blandit arcu in. Interdum at hac elit enim
-            egestas suspendisse in. Lorem libero nisl cras porta in donec
-            interdum id facilisi. Pharetra varius nibh eget fermentum mattis
-            purus massa odio. Malesuada tortor tempor eget nunc tellus viverra
-            auctor et. Molestie et quam consectetur turpis nibh mattis mi quam.
-            Felis sed gravida duis tempor.
-            <br />
-            <br />
-            In tincidunt ut nunc lacus cursus. Id sed senectus vel id eros. Non
-            ultrices enim egestas lorem. Enim at sed libero scelerisque
-            adipiscing lorem suscipit tempus. Egestas elementum gravida cras
-            aenean eu adipiscing nisl orci. Volutpat vitae ut ut laoreet quam
-            nibh malesuada pharetra cursus.
+            Scale and proportion are also important factors in architectural
+            design. Scale refers to the size of a building in relation to its
+            surroundings, while proportion refers to the relationship between
+            different elements of a building. Both of these concepts can help
+            create a sense of visual balance and harmony in a building. Finally,
+            the materials used in a building can also have a significant impact
+            on its aesthetic qualities. From the warm and inviting look of wood
+            to the sleek and modern appearance of steel and glass, the choice of
+            materials can greatly influence the overall look and feel of a
+            building.
           </p>
         </div>
         <div className='w-full md:w-2/3 mt-10 flex flex-col mx-auto'>
@@ -117,57 +91,71 @@ function Articles() {
         </div>
         <div className='mt-10 mb-20 w-full md:w-2/3 flex flex-col mx-auto'>
           <p className='font-serif text-neutral-700 text-base'>
-            Lorem ipsum dolor sit amet consectetur. Turpis at posuere egestas
-            convallis fermentum nascetur adipiscing nunc. In sodales vitae
-            malesuada turpis. Sollicitudin ac vestibulum consequat posuere nec
-            lacus. Nunc facilisis et sit praesent fusce quisque. At vulputate in
-            feugiat nisl eu lorem. Et at sem cras elit molestie. Nisl nisi leo
-            maecenas id.
+            <p className='font-medium'>Finding Beauty in Buildings</p>
+            <br />
+            With these principles in mind, let's explore some tips on how to
+            find beauty in buildings. Look for interesting forms. One of the
+            easiest ways to appreciate the beauty of architecture is to look for
+            interesting and unique forms. This might include buildings with
+            unusual shapes, complex facades, or intricate details. Pay attention
+            to scale and proportion. As you look at buildings, pay attention to
+            how their size and shape relate to their surroundings.
+            <br />A well-proportioned building will often create a sense of
+            balance and harmony that is pleasing to the eye. Appreciate the use
+            of materials. Take the time to appreciate the different materials
+            used in a building's construction. Notice how they interact with
+            each other and how they contribute to the overall look and feel of
+            the building. Look for patterns and textures. Many buildings feature
+            interesting patterns and textures that can add depth and richness to
+            their design. Look for repeating shapes or textures that create a
+            sense of rhythm and movement.
             <br />
             <br />
-            Lectus integer mattis aliquet imperdiet nunc vestibulum donec diam
-            tortor. Nunc massa arcu morbi augue mattis sit cursus in dictum. Id
-            amet eget montes magna non lorem non donec sit. Rutrum risus nulla
-            egestas ipsum tincidunt adipiscing velit pulvinar. Quis sapien sed
-            lorem nunc. Pellentesque viverra proin volutpat duis imperdiet
-            consectetur sed egestas dui. Congue suspendisse ut luctus nunc.
-            Donec enim interdum malesuada venenatis sit blandit. Pharetra vel
-            nullam euismod vel aenean nisi tellus nunc.
+            <p className='font-medium'>Consider the building's context</p>
+            <br />
+            A building's context refers to its surroundings, including the other
+            buildings nearby, the landscape, and the broader community. Consider
+            how a building fits into its context and how it interacts with the
+            surrounding environment. Notice how light interacts with the
+            building. The way that light interacts with a building can greatly
+            influence its appearance. Take the time to observe how light plays
+            off different surfaces and how it changes throughout the day. Pay
+            attention to the details. Often, it's the small details that can
+            make a building truly beautiful. Look for interesting details like
+            ornate doorways, intricate moldings, or finely crafted windows. Keep
+            an open mind.
+            <br />
+            Finally, it's important to approach architecture with an open mind.
+            Don't be afraid to appreciate buildings that are different from what
+            you might normally find beautiful. Sometimes, it's the unexpected
+            and unusual that can be the most inspiring.
             <br />
             <br />
-            Malesuada nullam amet diam at imperdiet sapien tortor. Viverra
-            egestas consequat sit fermentum eget. Ac tellus natoque sem felis
-            quis risus commodo urna aliquet. Accumsan vulputate consectetur leo
-            sit duis. Turpis malesuada molestie pretium eget amet. Integer dui
-            ultrices nullam ornare facilisi condimentum. Egestas imperdiet etiam
-            nunc tellus. Mollis vel diam ornare vel placerat sed diam aliquet
-            gravida. Id vulputate sed dui at amet. Neque ultricies placerat nibh
-            velit nulla in justo. Donec dictum ipsum aliquam sed sed consequat
-            bibendum. Id ut cras nisl et. Sed nunc amet metus magna est. Arcu
-            scelerisque dignissim libero eu pellentesque luctus nisi nunc. Mi
-            imperdiet et molestie viverra facilisis. Arcu pellentesque at amet
-            cursus bibendum. Elementum luctus ultricies in amet nec sed sed.
-            Arcu in eu turpis ut.
+            Architecture is an art form that can be appreciated for its beauty
+            and aesthetic qualities. By understanding some of the key principles
+            of architectural design and keeping an open mind, it's possible to
+            find beauty in buildings all around us. Whether you're admiring the
+            soaring lines of a modern skyscraper or the intricate details of a
+            historic cathedral, the art of architecture offers endless
+            opportunities for inspiration and enjoyment.
             <br />
             <br />
-            Ipsum amet lobortis massa ultrices ac risus arcu aliquet. Nunc
-            gravida non lobortis facilisis. Sodales varius orci aliquet enim
-            interdum nulla pharetra. Diam quam at ullamcorper scelerisque
-            praesent sagittis a eros amet. Hendrerit volutpat ac nulla nunc eget
-            morbi odio. Amet leo neque ut sit lectus pellentesque. Sapien eget
-            volutpat elementum blandit arcu in. Interdum at hac elit enim
-            egestas suspendisse in. Lorem libero nisl cras porta in donec
-            interdum id facilisi. Pharetra varius nibh eget fermentum mattis
-            purus massa odio. Malesuada tortor tempor eget nunc tellus viverra
-            auctor et. Molestie et quam consectetur turpis nibh mattis mi quam.
-            Felis sed gravida duis tempor.
+            By taking the time to observe and appreciate the different elements
+            that make up a building's design, we can gain a greater
+            understanding of the ways in which architecture reflects the values,
+            culture, and history of a place. Whether we're exploring the ornate
+            palaces of Europe, the colorful temples of Asia, or the sleek modern
+            buildings of North America, the beauty of architecture can help us
+            to connect with the world in a meaningful and profound way.
             <br />
             <br />
-            In tincidunt ut nunc lacus cursus. Id sed senectus vel id eros. Non
-            ultrices enim egestas lorem. Enim at sed libero scelerisque
-            adipiscing lorem suscipit tempus. Egestas elementum gravida cras
-            aenean eu adipiscing nisl orci. Volutpat vitae ut ut laoreet quam
-            nibh malesuada pharetra cursus.
+            So next time you're traveling or just taking a walk around your
+            neighborhood, take a moment to stop and appreciate the buildings
+            around you. You never know what hidden gems of architectural beauty
+            you might discover. By embracing the art of architecture and finding
+            beauty in the world around us, we can open up new doors of
+            creativity, inspiration, and appreciation for the wonders of the
+            built environment.
           </p>
         </div>
       </article>
