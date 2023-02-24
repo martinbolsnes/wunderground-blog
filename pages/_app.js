@@ -1,4 +1,5 @@
 import '@/styles/globals.css';
+import Footer from '@/components/Footer';
 import Navbar from 'components/Navbar';
 
 export default function App({ Component, pageProps }) {
@@ -8,6 +9,7 @@ export default function App({ Component, pageProps }) {
         <Navbar />
       </div>
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }
