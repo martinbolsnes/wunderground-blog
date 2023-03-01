@@ -13,7 +13,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'wunderground.sanity.studio/',
+        hostname: 'wunderground.sanity.studio',
       },
     ],
   },
