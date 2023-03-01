@@ -81,7 +81,7 @@ const Post = ({ post }) => {
           <div className='w-full mt-10'>
             <Image
               src={urlFor(mainImage).url()}
-              alt={`${title}`}
+              alt=''
               width={1200}
               height={450}
               priority='true'
