@@ -10,8 +10,8 @@ function urlFor(source) {
 
 const ptComponents = {
   block: {
-    h4: ({ children }) => (
-      <h4 className='mt-10 mb-4 text-xl font-medium'>{children}</h4>
+    h2: ({ children }) => (
+      <h2 className='mt-10 mb-4 text-xl font-medium font-sans'>{children}</h2>
     ),
   },
   types: {
