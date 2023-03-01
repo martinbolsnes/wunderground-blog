@@ -21,7 +21,7 @@ const Index = ({ posts }) => {
               slug = '',
               publishedAt = '',
               mainImage = '',
-              author = '',
+              categories = '',
               name = '',
             }) =>
               slug && (
@@ -38,10 +38,16 @@ const Index = ({ posts }) => {
                       />
                     </div>
                     <div className='flex flex-col md:gap-4 gap-2 pt-4 pb-8'>
+                      <h2 className='font-sans font-light text-neutral-800 text-xs uppercase'>
+                        {categories}
+                      </h2>
                       <h1 className='font-sans font-medium text-neutral-900 text-2xl uppercase'>
                         {title}
                       </h1>
-                      <p className='font-sans text-neutral-700 text-xs uppercase'>
+                      <h3 className='font-sans text-neutral-900 text-xs uppercase'>
+                        {name}
+                      </h3>
+                      <p className='font-sans font-light text-neutral-500 text-xs uppercase'>
                         {new Date(publishedAt).toDateString()}
                       </p>
                     </div>
@@ -57,7 +63,15 @@ const Index = ({ posts }) => {
 export async function getStaticProps() {
   const posts = await client.fetch(
     groq`
-      *[_type == "post" && publishedAt < now()] | order(publishedAt desc)
+      *[_type == "post" && publishedAt < now()] | order(publishedAt desc){
+        title,
+          _id,
+          slug,
+          publishedAt,
+        "name": author->name,
+        "categories": categories[]->title,
+        "mainImage": mainImage,
+      }
     `
   );
   return {
