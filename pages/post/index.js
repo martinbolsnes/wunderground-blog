@@ -30,7 +30,7 @@ const Index = ({ posts }) => {
                     <div>
                       <Image
                         src={urlFor(mainImage).url()}
-                        alt={`${title}`}
+                        alt=''
                         width={500}
                         height={400}
                         priority='true'
