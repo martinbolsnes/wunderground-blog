@@ -1,7 +1,14 @@
-import React from 'react';
+import Link from 'next/link';
+import groq from 'groq';
+import client from '../client';
 import Image from 'next/image';
+import imageUrlBuilder from '@sanity/image-url';
 
-function Hero() {
+function urlFor(source) {
+  return imageUrlBuilder(client).image(source);
+}
+
+function Hero({ posts }) {
   return (
     <section className='max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 mt-32'>
       <div className='flex flex-col lg:flex-row w-full'>
@@ -37,6 +44,28 @@ function Hero() {
       </div>
     </section>
   );
+}
+
+export async function getStaticProps() {
+  const posts = await client.fetch(
+    groq`
+      *[_type == "post" && publishedAt < now()] | order(publishedAt desc){
+        title,
+          _id,
+          slug,
+          publishedAt,
+        "name": author->name,
+        "categories": categories[]->title,
+        "mainImage": mainImage,
+      }
+    `
+  );
+  return {
+    props: {
+      posts,
+    },
+    revalidate: 10,
+  };
 }
 
 export default Hero;
