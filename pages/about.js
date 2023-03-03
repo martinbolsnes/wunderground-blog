@@ -18,7 +18,7 @@ function about({ authors }) {
           Discover the beauty of the world through architecture, food, travel,
           and photography
         </h1>
-        <div className='w-full'>
+        <div className='w-full mt-4'>
           <Image
             src='/cherry.jpg'
             alt='Picture of a builing'
