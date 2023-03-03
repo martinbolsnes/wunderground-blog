@@ -1,4 +1,5 @@
 import '@/styles/globals.css';
+import 'animate.css/animate.min.css';
 import Footer from '@/components/Footer';
 import Navbar from 'components/Navbar';
 
