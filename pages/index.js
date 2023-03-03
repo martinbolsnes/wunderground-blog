@@ -5,7 +5,6 @@ import groq from 'groq';
 import client from '../client';
 import Link from 'next/link';
 import imageUrlBuilder from '@sanity/image-url';
-
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
 }
@@ -32,7 +31,7 @@ export default function Home({ hero, articleSection3col, articleSection4col }) {
                 name = '',
               }) =>
                 slug && (
-                  <div key={_id}>
+                  <div key={_id} className='animate__animated animate__zoomIn'>
                     <Link
                       href={`/post/${encodeURIComponent(slug.current)}`}
                       className='flex flex-col lg:flex-row w-full'
@@ -44,7 +43,7 @@ export default function Home({ hero, articleSection3col, articleSection4col }) {
                           width={772}
                           height={500}
                           priority='true'
-                          className='image-shadow'
+                          className='image-shadow image'
                         />
                       </div>
                       <div className='flex flex-col lg:w-1/2 w-full gap-4 mt-4 lg:ml-6'>
@@ -93,9 +92,10 @@ export default function Home({ hero, articleSection3col, articleSection4col }) {
                             alt={`${title}`}
                             width={500}
                             height={400}
-                            className='image-shadow'
+                            className='image-shadow image'
                           />
                         </div>
+
                         <div className='flex flex-col md:gap-4 gap-2 pt-4 pb-8'>
                           <p className='font-sans font-light text-neutral-800 text-xs uppercase'>
                             {categories}
@@ -139,7 +139,7 @@ export default function Home({ hero, articleSection3col, articleSection4col }) {
                             alt={`${title}`}
                             width={500}
                             height={400}
-                            className='image-shadow'
+                            className='image-shadow image'
                           />
                         </div>
                         <div className='flex flex-col md:gap-4 gap-2 pt-4 pb-8'>

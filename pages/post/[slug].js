@@ -115,7 +115,7 @@ const Post = ({ post, articleSection3col }) => {
                           alt={`${title}`}
                           width={500}
                           height={400}
-                          className='image-shadow'
+                          className='image-shadow image'
                         />
                       </div>
                       <div className='flex flex-col md:gap-4 gap-2 pt-4 pb-8'>
