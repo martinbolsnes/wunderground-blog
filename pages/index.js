@@ -1,10 +1,16 @@
 import Head from 'next/head';
-import Hero from '@/components/Hero';
-import ArticleSection3col from '@/components/ArticleSection3col';
-import ArticleSection4col from '@/components/ArticleSection4col';
+import Image from 'next/image';
 import Divider from '@/components/Divider';
+import groq from 'groq';
+import client from '../client';
+import Link from 'next/link';
+import imageUrlBuilder from '@sanity/image-url';
 
-export default function Home() {
+function urlFor(source) {
+  return imageUrlBuilder(client).image(source);
+}
+
+export default function Home({ hero, articleSection3col, articleSection4col }) {
   return (
     <>
       <Head>
@@ -14,11 +20,194 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className='bg-neutral-50'>
-        <Hero />
-        <ArticleSection3col />
+        <section className='max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 mt-32'>
+          {hero &&
+            hero.map(
+              ({
+                _id,
+                title = '',
+                slug = '',
+                mainImage = '',
+                categories = '',
+                name = '',
+              }) =>
+                slug && (
+                  <div key={_id}>
+                    <Link
+                      href={`/post/${encodeURIComponent(slug.current)}`}
+                      className='flex flex-col lg:flex-row w-full'
+                    >
+                      <div className='lg:w-1/2 w-full'>
+                        <Image
+                          src={urlFor(mainImage).url()}
+                          alt={`${title}`}
+                          width={772}
+                          height={500}
+                          priority='true'
+                          className='image-shadow'
+                        />
+                      </div>
+                      <div className='flex flex-col lg:w-1/2 w-full gap-4 mt-4 lg:ml-6'>
+                        <p className='font-sans font-light text-neutral-800 text-xs uppercase'>
+                          {categories}
+                        </p>
+                        <h1 className='font-sans font-medium text-neutral-900 md:text-4xl text-2xl uppercase'>
+                          {title}
+                        </h1>
+                        <p className='font-serif text-neutral-700 text-base'>
+                          Architecture is often thought of as a practical art
+                          form, concerned primarily with function and utility.
+                          However, just like other forms of art, architecture
+                          can also be beautiful, inspiring, and
+                          thought-provoking. The ability to appreciate the
+                          aesthetic qualities of buildings is an important part
+                          of understanding and enjoying the world around us.
+                        </p>
+                        <p className='font-sans text-neutral-900 text-xs uppercase'>
+                          BY {name}
+                        </p>
+                      </div>
+                    </Link>
+                  </div>
+                )
+            )}
+        </section>
+        <section className='max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 mt-20'>
+          <div className='grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:gap-12 gap-6'>
+            {articleSection3col &&
+              articleSection3col.map(
+                ({
+                  _id,
+                  title = '',
+                  slug = '',
+                  mainImage = '',
+                  categories = '',
+                  name = '',
+                }) =>
+                  slug && (
+                    <div key={_id}>
+                      <Link href={`/post/${encodeURIComponent(slug.current)}`}>
+                        <div>
+                          <Image
+                            src={urlFor(mainImage).url()}
+                            alt={`${title}`}
+                            width={500}
+                            height={400}
+                            className='image-shadow'
+                          />
+                        </div>
+                        <div className='flex flex-col md:gap-4 gap-2 pt-4 pb-8'>
+                          <p className='font-sans font-light text-neutral-800 text-xs uppercase'>
+                            {categories}
+                          </p>
+                          <h1 className='font-sans font-medium text-neutral-900 text-2xl uppercase'>
+                            {title}
+                          </h1>
+
+                          <p className='font-sans text-neutral-900 text-xs uppercase'>
+                            by {name}
+                          </p>
+                        </div>
+                      </Link>
+                    </div>
+                  )
+              )}
+          </div>
+        </section>
         <Divider />
-        <ArticleSection4col />
+        <section className='max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 mt-20'>
+          <h3 className='font-sans text-neutral-700 text-lg -mt-10 mb-6'>
+            Latest
+          </h3>
+          <div className='grid lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-2 lg:gap-8 gap-4'>
+            {articleSection4col &&
+              articleSection4col.map(
+                ({
+                  _id,
+                  title = '',
+                  slug = '',
+                  mainImage = '',
+                  categories = '',
+                  name = '',
+                }) =>
+                  slug && (
+                    <div key={_id}>
+                      <Link href={`/post/${encodeURIComponent(slug.current)}`}>
+                        <div>
+                          <Image
+                            src={urlFor(mainImage).url()}
+                            alt={`${title}`}
+                            width={500}
+                            height={400}
+                            className='image-shadow'
+                          />
+                        </div>
+                        <div className='flex flex-col md:gap-4 gap-2 pt-4 pb-8'>
+                          <p className='font-sans font-light text-neutral-800 text-xs uppercase'>
+                            {categories}
+                          </p>
+                          <h1 className='font-sans font-medium text-neutral-900 text-2xl uppercase'>
+                            {title}
+                          </h1>
+
+                          <p className='font-sans text-neutral-900 text-xs uppercase'>
+                            by {name}
+                          </p>
+                        </div>
+                      </Link>
+                    </div>
+                  )
+              )}
+          </div>
+        </section>
       </main>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const hero = await client.fetch(
+    groq`
+      *[_type == "post" && hero]{
+        title,
+          _id,
+          slug,
+          publishedAt,
+        "name": author->name,
+        "categories": categories[]->title,
+        "mainImage": mainImage,
+      }
+    `
+  );
+  const articleSection3col = await client.fetch(
+    groq`*[_type == "post" && featured][0..2]{
+      title,
+          _id,
+          slug,
+          publishedAt,
+        "name": author->name,
+        "categories": categories[]->title,
+        "mainImage": mainImage,
+    }`
+  );
+  const articleSection4col = await client.fetch(
+    groq`
+      *[_type == "post" && publishedAt < now()] | order(publishedAt desc)[0..3]{
+        title,
+          _id,
+          slug,
+        "name": author->name,
+        "categories": categories[]->title,
+        "mainImage": mainImage,
+      }
+    `
+  );
+  return {
+    props: {
+      hero,
+      articleSection3col,
+      articleSection4col,
+    },
+    revalidate: 10,
+  };
 }
