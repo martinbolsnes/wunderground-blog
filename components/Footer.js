@@ -22,8 +22,8 @@ function Footer() {
                 </Link>
               </li>
               <li className='mb-4'>
-                <Link href='/articles' className='hover:text-neutral-50'>
-                  Articles
+                <Link href='/post' className='hover:text-neutral-50'>
+                  Latest
                 </Link>
               </li>
               <li className='mb-4'>
