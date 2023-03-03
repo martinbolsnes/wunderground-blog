@@ -40,7 +40,7 @@ function Footer() {
           </div>
           <div>
             <h2 className='mb-6 text-sm uppercase text-neutral-50'>
-              Catecories
+              Categories
             </h2>
             <ul className='text-neutral-400 text-sm'>
               <li className='mb-4'>
@@ -58,7 +58,7 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <h2 className='mb-6 text-sm text-neutral-50'>Legal</h2>
+            <h2 className='mb-6 text-sm text-neutral-50 uppercase'>Legal</h2>
             <ul className='text-neutral-400 text-sm'>
               <li className='mb-4'>
                 <p className='hover:text-neutral-50'>Privacy Policy</p>
