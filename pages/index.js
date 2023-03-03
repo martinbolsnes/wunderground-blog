@@ -73,7 +73,7 @@ export default function Home({ hero, articleSection3col, articleSection4col }) {
             )}
         </section>
         <section className='max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 mt-20'>
-          <div className='grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:gap-12 gap-6'>
+          <div className='grid md:grid-cols-3 grid-cols-1 lg:gap-12 gap-6'>
             {articleSection3col &&
               articleSection3col.map(
                 ({
