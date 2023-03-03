@@ -4,6 +4,7 @@ import { PortableText } from '@portabletext/react';
 import client from '../../client';
 import Image from 'next/image';
 import Link from 'next/link';
+import Divider from '@/components/Divider';
 
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
@@ -89,6 +90,7 @@ const Post = ({ post, articleSection3col }) => {
           </div>
         </div>
       </article>
+      <Divider />
       <section className='max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 mt-20'>
         <h3 className='font-sans text-neutral-700 text-lg -mt-10 mb-6'>
           Featured
