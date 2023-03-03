@@ -22,12 +22,16 @@ export default function Navigation() {
             <div className='max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 relative flex items-center justify-between h-16'>
               <div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-start'>
                 <div className='flex-1 flex items-center'>
-                  <h1 className='block lg:hidden h-8 w-auto font-sans text-xl md:text-2xl text-neutral-900'>
-                    Wünderground
-                  </h1>
-                  <h1 className='hidden lg:block h-8 w-auto font-sans text-xl md:text-2xl text-neutral-900'>
-                    Wünderground
-                  </h1>
+                  <Link href='/'>
+                    <h1 className='block lg:hidden h-8 w-auto font-sans text-xl md:text-2xl text-neutral-900'>
+                      Wünderground
+                    </h1>
+                  </Link>
+                  <Link href='/'>
+                    <h1 className='hidden lg:block h-8 w-auto font-sans text-xl md:text-2xl text-neutral-900'>
+                      Wünderground
+                    </h1>
+                  </Link>
                 </div>
                 <div className='hidden sm:block sm:ml-6'>
                   <div className='flex space-x-4'>
