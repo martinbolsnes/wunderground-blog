@@ -11,7 +11,9 @@ function urlFor(source) {
 const Index = ({ posts }) => {
   return (
     <div className='max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 mt-28'>
-      <h1 className='font-sans text-3xl text-gray-900'>Articles</h1>
+      <h1 className='font-sans text-neutral-700 text-lg mt-10 mb-6'>
+        Articles
+      </h1>
       <div className='grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-4 mt-10'>
         {posts.length > 0 &&
           posts.map(
