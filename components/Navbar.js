@@ -87,7 +87,7 @@ export default function Navigation() {
                     key={item.name}
                     as='a'
                     href={item.href}
-                    className={`px-3 py-2 block text-base md:text-lg font-sans hover:text-neutral-500 ${
+                    className={`px-3 py-2 block text-base md:text-lg font-sans hover:text-neutral-500 focus:outline-none focus:ring-inset focus:ring-transparent ${
                       router.pathname === `/${item.href}`
                         ? 'text-neutral-500'
                         : ''
